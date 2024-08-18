@@ -22,14 +22,14 @@ app.post('/qr/save/transaction', (req, res) => {
 
     //     })
     // })
-  var price = req.body.price
-    var user_id =  req.body.user_id
-    var chat_id='693726757';
-    var token='6088240244:AAH3ZkMDYRanrJ-FPu29FNCVe7LZLZb2A1c';
-    var text= "siengroeun2018"
-    const TelegramBot = require('node-telegram-bot-api');
-    const bot = new TelegramBot(token, {polling: true});
-    bot.sendMessage(chat_id, 'Hello Paid KHQR From User ID  : ' +user_id+ ' Price ' + price +' Hash '+req.body.md5 );
+//   var price = req.body.price
+//     var user_id =  req.body.user_id
+//     var chat_id='693726757';
+//     var token='6088240244:AAH3ZkMDYRanrJ-FPu29FNCVe7LZLZb2A1c';
+//     var text= "siengroeun2018"
+//     const TelegramBot = require('node-telegram-bot-api');
+//     const bot = new TelegramBot(token, {polling: true});
+//     bot.sendMessage(chat_id, 'Hello Paid KHQR From User ID  : ' +user_id+ ' Price ' + price +' Hash '+req.body.md5 );
     res.json({
         msg: "Transaction has been saved",
         code: 0
