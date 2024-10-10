@@ -145,7 +145,7 @@ app.post('/check/transaction', (req, res) => {
       });
 });
 app.get('/' ,(req,res)=>{
-    res.end('Welcome to  by Cam-Tool\n');
+    res.end('Welcome To by Cam-Tool\n');
   });
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
