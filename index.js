@@ -32,7 +32,7 @@ app.post('/qr/save/transaction', (req, res) => {
 //     const bot = new TelegramBot(token, {polling: true});
 //     bot.sendMessage(chat_id, 'Hello Paid KHQR From User ID  : ' +user_id+ ' Price ' + price +' Hash '+req.body.md5 );
 
-    Axios.get('https://api.camfeed.net/sendbot/'+price+'/'+user_id+'/'+md5,)
+    Axios.get('http://api.camfeed.net/sendbot/'+price+'/'+user_id+'/'+md5,)
     res.json({
         msg: "Transaction has been saved",
         code: 0
