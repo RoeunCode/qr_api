@@ -103,7 +103,7 @@ app.get('/pay_qr', (req, res) => {
         const KHQR = new BakongKHQR();
         const individual = KHQR.generateIndividual(individualInfo);
         md5_en = individual.data.md5
-        var tokenBakong = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiN2NhZTFhNTdmOTk4NDNkIn0sImlhdCI6MTc0MTA3MjI2MSwiZXhwIjoxNzQ4ODQ4MjYxfQ.jHlu2i8T_6deKnoMaI5KPgZwHpK6ndWMJGoP4j1AbPs";
+        var tokenBakong = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiN2NhZTFhNTdmOTk4NDNkIn0sImlhdCI6MTc0ODg1MTg3NSwiZXhwIjoxNzU2NjI3ODc1fQ.SnTu680qjheWurls4nMviiHTrnYgNEMBml-mm-untLY";
 
         res.json({
             qr: individual.data.qr,
