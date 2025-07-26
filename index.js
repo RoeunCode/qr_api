@@ -103,7 +103,7 @@ app.get('/pay_qr', (req, res) => {
         const KHQR = new BakongKHQR();
         const individual = KHQR.generateIndividual(individualInfo);
         md5_en = individual.data.md5
-        var tokenBakong = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiN2NhZTFhNTdmOTk4NDNkIn0sImlhdCI6MTc0ODg1MTg3NSwiZXhwIjoxNzU2NjI3ODc1fQ.SnTu680qjheWurls4nMviiHTrnYgNEMBml-mm-untLY";
+        var tokenBakong = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiN2NhZTFhNTdmOTk4NDNkIn0sImlhdCI6MTc1MzQ5Mzc2NSwiZXhwIjoxNzYxMjY5NzY1fQ.UrocnkLqSKGM1PJRajXSvx5IurUWP4405FFvJ_ZCP3s";
 
         res.json({
             qr: individual.data.qr,
@@ -133,7 +133,7 @@ app.post('/check/transaction', (req, res) => {
     let dataMD5 = JSON.stringify({
         md5: req.body.md5
     });
-    var tokenBakong = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiN2NhZTFhNTdmOTk4NDNkIn0sImlhdCI6MTc0ODg1MTg3NSwiZXhwIjoxNzU2NjI3ODc1fQ.SnTu680qjheWurls4nMviiHTrnYgNEMBml-mm-untLY";
+    var tokenBakong = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiN2NhZTFhNTdmOTk4NDNkIn0sImlhdCI6MTc1MzQ5Mzc2NSwiZXhwIjoxNzYxMjY5NzY1fQ.UrocnkLqSKGM1PJRajXSvx5IurUWP4405FFvJ_ZCP3s";
 
     let config = {
         method: 'post',
